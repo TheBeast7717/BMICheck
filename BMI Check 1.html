@@ -1,0 +1,111 @@
+<html>
+    <head><title>BMI Check</title>
+
+        <script>
+            function bmiCalculate(){
+                var bmiHeight = document.getElementById("height1").value;
+                var bmiWeight = document.getElementById("weight1").value;
+
+                var answerBMI = (parseFloat(bmiWeight))/(parseFloat(bmiHeight)*parseFloat(bmiHeight));
+
+               document.getElementById("bmiAnswer1").value = Math.round(answerBMI);
+
+
+
+
+                // console.log(answerBMI);
+                if(answerBMI.value<18.5){
+                document.write("Never Mind , Eat well , sleep well");
+            }
+                
+
+                   
+            }
+
+            
+
+
+        </script>
+
+       
+           
+        
+  
+    
+    
+    
+    
+    
+    
+    </head>
+    
+
+    <body bgColor=#fff59c >
+        <Font Size =6.5>
+        <Font Color = #0a2073>
+        <b><u><center>Welcome To BMI Check</center></u></b>
+
+    </Font>
+</Font>
+
+<center>
+    <Font Face = "courier">
+    <Font Size=4.9>
+<p>
+    <b>
+    Enter your height and weight in the give boxes and press calculate</b>
+
+</p>
+
+<p>
+    <b>
+    Your BMI(Body Mass Index) should be between 18.5-24.9 . It is considered a Healthy Body.</b>
+</p>
+
+<pre>
+  BMI < 18.5 = Underweight
+    BMI b/w 18.5-24.9 = Normal
+ BMI > 18.5 = Overweight
+    BMI > 30 and above = obese
+
+</pre>
+
+
+</Font>
+</Font>
+
+
+
+
+</center>
+
+<form>
+    Enter your height (in ms) :&nbsp  <input type = "text" maxlength="4" value="" id="height1"><br><br>
+    Enter your weight (in kgs) : <input type="text" maxlength = "3" id = "weight1"><br><br> 
+
+    <input type = "button" value = "Calculate BMI" onClick="bmiCalculate()"><br><br>
+
+    Body Mass Index (BMI) : &nbsp &nbsp<input type = "text" id = "bmiAnswer1" readonly>
+
+
+
+
+
+</form>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
